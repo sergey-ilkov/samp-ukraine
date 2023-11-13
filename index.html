@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMP Ukraine</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            background: #070418;
+        }
+
+        .preload-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 210px;
+            height: 100px;
+            opacity: 0;
+            /* overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="preloader"></div>
+    <div class="wrapper page-home">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img class="header__logo-img" src="images/logo.png" alt="logo">
+                    </div>
+                    <nav class="nav-menu">
+                        <ul class="header-menu">
+                            <li class="header-menu__item"><a class="header-menu__item-link link active" href="index.html">Головна</a></li>
+                            <li class="header-menu__item"><a class="header-menu__item-link link" href="#">Почати грати</a></li>
+                            <li class="header-menu__item"><a class="header-menu__item-link link" href="#">Форум</a></li>
+                        </ul>
+                    </nav>
+                    <a class="header__link-btn btn btn-grd-1" href="donate.html">Донат $</a>
+                    <button class="burger-menu"><span></span></button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="hero">
+                <div class="hero-decor hero-decor__top">
+                    <svg width="61" height="59" viewBox="0 0 61 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.15"
+                            d="M10.1945 14.669L7.86072 2.63966L8.11502 2.69781L21.7983 18.9264L30.482 28.9323L37.4798 36.9487L35.7951 44.3163L40.8516 40.9278L45.0805 43.4988L45.1167 42.1704L48.6189 43.2385L44.8405 41.0378L42.6821 37.6036L43.4231 36.7036L44.5297 37.6969C45.1229 38.2293 45.7642 38.7057 46.4453 39.1198C47.1706 39.5607 47.9376 39.929 48.7353 40.2193L49.5122 40.5021L49.9896 40.6112C50.686 40.7705 51.3602 41.0144 51.9972 41.3376L53.3488 42.4487L53.8212 43.8934L56.6405 45.6075L40.8166 51.6134L25.8718 57.2856L24.0626 57.0056L22.2534 56.7256L19.5942 56.6522L16.5644 57.0288L16.4844 56.2084L26.7936 49.7435L21.6132 50.163L10.8085 44.7516L10.1541 40.5918L20.3263 42.9179L8.85294 35.7495L8.01654 28.8747L18.0003 34.3657L3.89609 22.3184L2.33294 13.9407L20.6441 27.4847L10.1945 14.669Z"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="hero-decor hero-decor__bottom">
+                    <svg width="68" height="48" viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.05"
+                            d="M10.9954 11.7386L3.70665 2.32439L3.95271 2.26355L22.9249 10.3539L34.8368 15.2339L44.4155 19.1258L46.1782 26.2545L49.0818 21.1021L53.8756 21.4819L53.3256 20.3137L56.8312 19.7077L52.5903 19.4521L49.2151 17.4173L49.4641 16.3124L50.8587 16.6898C51.6063 16.8921 52.3711 17.0247 53.1431 17.0858C53.9653 17.151 54.7919 17.1348 55.6109 17.0376L56.4087 16.9428L56.8705 16.8286C57.5443 16.662 58.236 16.5786 58.93 16.5802L60.5887 16.9526L61.6308 17.9992L64.8266 18.2524L53.7276 30.3873L43.2452 41.8481L41.5532 42.3969L39.8612 42.9457L37.5222 44.0457L35.0587 45.6983L34.6303 45.0216L40.7444 34.9019L36.4339 37.5328L24.6927 37.5666L22.3046 34.2444L32.147 31.8107L19.0568 30.6131L15.3227 25.0152L26.3865 25.4097L8.87901 21.1307L3.85678 14.5471L25.6689 18.2834L10.9954 11.7386Z"
+                            stroke="white" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="hero__items">
+                        <div class="hero__item hero__item-content">
+                            <span class="hero-decor__text-top btn btn-grd-2">онлайн гра в GTA SA</span>
+                            <h1 class="hero__title title-h1">
+                                <span class="accent-font gradient-1">Вирушай </span>
+                                <span>у реальну</span>
+                                <span class="gradient-2"> атмосферу </span>
+                                <span>GTA Sa</span>
+                            </h1>
+                            <p class="hero__description description">
+                                Скачайте мобільний або ПК лаунчер та починайте грати
+                            </p>
+                            <div class="hero__links">
+                                <a class="hero__link-btn btn btn-grd-1 btn-accent" href="#" download="download">
+                                    <span class="btn-accent__content">
+                                        <span>MOBILE лаунчер</span>
+                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.5333 7.07881L11.4666 5.79547L7.83325 8.82881V0.603806H6.16659V8.82881L2.53325 5.79547L1.46659 7.07881L6.99992 11.6871L12.5333 7.07881ZM0.333252 13.9371H13.6666V15.6038H0.333252V13.9371Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <span>або</span>
+                                <a class="hero__link" href="#" download="download">PC лаунчер</a>
+                            </div>
+                        </div>
+                        <div class="hero__item hero-social">
+                            <div class="hero-social__items">
+                                <div class="hero-social__item">
+                                    <a class="hero-social__link hero-social__link-telegram" href="#">
+                                        <span class="hero-social__icon hero-social__icon-telegram"></span>
+                                        <span>Ми </span>
+                                        <span>В Телеграмі</span>
+                                        <p class="hero-social__text">
+                                            <span class="hero-social__text-number">8</span>
+                                            <span>K+</span>
+                                            <span class="text-min">підписників</span>
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="hero-social__item">
+                                    <a class="hero-social__link hero-social__link-youtube" href="#">
+                                        <span class="hero-social__icon hero-social__icon-youtube"></span>
+                                        <span>Ми </span>
+                                        <span>на YOUTUBE</span>
+                                        <p class="hero-social__text">
+                                            <span class="hero-social__text-number">2</span>
+                                            <span>K+</span>
+                                            <span class="text-min">підписників</span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                            <span class="hero-decor__text-bottom">онлайн гра в GTA SA</span>
+                        </div>
+                        <img class="hero__img" src="images/home/hero-img.png" alt="phone-image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="servers">
+                <div class="container">
+                    <div class="servers__items">
+                        <div class="servers__item servers__item-title">
+                            <h2 class="servers__title title-h2">
+                                <span class="accent-font gradient-2">Наші сервери</span>
+                                <span>Моніторинг</span>
+                            </h2>
+                            <p class="servers__description description">Підключайтесь до нашого серверу зі своїми друзями</p>
+                        </div>
+                        <div class="servers__item servers__item-slider">
+                            <div id="servers-slider" class="servers-slider swiper">
+                                <div class="swiper-wrapper ">
+                                    <div class="swiper-slide servers-slider__item server">
+                                        <div class="server__inner">
+                                            <span class="server__indicator"></span>
+                                            <span class="server__name">server 1</span>
+                                            <h3 class="server__title title-h3 decor-red">RED</h3>
+                                            <div class="server__users">
+                                                <span class="server__users-online">1990</span>
+                                                <span>/</span>
+                                                <span class="server__users-total">2000</span>
+                                            </div>
+                                            <div class="server__progress">
+                                                <span class="server__progress-percent" data-percent="99.5"></span>
+                                            </div>
+                                            <button class="server__btn btn" data-ip="205.105.100.1">
+                                                <span class="server__btn-text">скопіювати ip</span>
+                                                <svg class="server__btn-svg" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.25 6.75H11.25V15.75H2.25V6.75ZM6.75 2.25V4.5H13.5V11.25H15.75V2.25H6.75Z"
+                                                        fill="#252438" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide servers-slider__item server">
+                                        <div class="server__inner">
+                                            <span class="server__indicator"></span>
+                                            <span class="server__name">server 2</span>
+                                            <h3 class="server__title title-h3 decor-blue">BLUE</h3>
+                                            <div class="server__users">
+                                                <span class="server__users-online">1200</span>
+                                                <span>/</span>
+                                                <span class="server__users-total">1500</span>
+                                            </div>
+                                            <div class="server__progress">
+                                                <span class="server__progress-percent" data-percent="80"></span>
+                                            </div>
+                                            <button class="server__btn btn" data-ip="205.105.100.2">
+                                                <span class="server__btn-text">скопіювати ip</span>
+                                                <svg class="server__btn-svg" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.25 6.75H11.25V15.75H2.25V6.75ZM6.75 2.25V4.5H13.5V11.25H15.75V2.25H6.75Z"
+                                                        fill="#252438" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide servers-slider__item server">
+                                        <div class="server__inner">
+                                            <span class="server__indicator"></span>
+                                            <span class="server__name">server 3</span>
+                                            <h3 class="server__title title-h3 decor-blue">BLUE</h3>
+                                            <div class="server__users">
+                                                <span class="server__users-online">500</span>
+                                                <span>/</span>
+                                                <span class="server__users-total">1000</span>
+                                            </div>
+                                            <div class="server__progress">
+                                                <span class="server__progress-percent" data-percent="50"></span>
+                                            </div>
+                                            <button class="server__btn btn" data-ip="205.105.100.3">
+                                                <span class="server__btn-text">скопіювати ip</span>
+                                                <svg class="server__btn-svg" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.25 6.75H11.25V15.75H2.25V6.75ZM6.75 2.25V4.5H13.5V11.25H15.75V2.25H6.75Z"
+                                                        fill="#252438" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide servers-slider__item server">
+                                        <div class="server__inner">
+                                            <span class="server__indicator"></span>
+                                            <span class="server__name">server 4</span>
+                                            <h3 class="server__title title-h3 decor-blue">BLUE</h3>
+                                            <div class="server__users">
+                                                <span class="server__users-online">500</span>
+                                                <span>/</span>
+                                                <span class="server__users-total">1000</span>
+                                            </div>
+                                            <div class="server__progress">
+                                                <span class="server__progress-percent" data-percent="50"></span>
+                                            </div>
+                                            <button class="server__btn btn" data-ip="205.105.100.4">
+                                                <span class="server__btn-text">скопіювати ip</span>
+                                                <svg class="server__btn-svg" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.25 6.75H11.25V15.75H2.25V6.75ZM6.75 2.25V4.5H13.5V11.25H15.75V2.25H6.75Z"
+                                                        fill="#252438" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="servers-slider__btn servers-slider__prev">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5 0L9.7198 1.18405L3.25391 7.65L17 7.65V9.35L3.25391 9.35L9.70195 15.7981L8.5 17C5.38815 13.8882 2.9784 11.4784 0 8.5C3.3711 5.1289 0.9911 7.5089 8.5 0Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="servers-slider__btn servers-slider__next">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.5 17L7.2802 15.8159L13.7461 9.35L-3.85612e-07 9.35L-3.6534e-07 7.65L13.7461 7.65L7.29805 1.2019L8.5 -5.78199e-07C11.6119 3.11185 14.0216 5.5216 17 8.5C13.6289 11.8711 16.0089 9.4911 8.5 17Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                            <div class="servers-slider__progress"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="instruction">
+                <div class="container">
+                    <h2 class="instruction__title title-h2">
+                        <span class="accent-font gradient-1">Інструкція</span>
+                        <span>як почати грати</span>
+                    </h2>
+                    <div class="instruction__items">
+                        <div class="instruction-decor instruction-decor__top">
+                            <svg width="65" height="54" viewBox="0 0 65 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.05"
+                                    d="M10.6038 12.8885L5.78792 2H6.04139L22.5169 14.4079L32.9091 22.0045L41.2736 28.0818L41.2736 35.4252L45.3291 31.1205L49.8916 32.6398L49.6381 31.3737L53.1867 31.6269L49.1312 30.3608L46.343 27.5754L46.8499 26.5625L48.1132 27.2636C48.7904 27.6395 49.501 27.9517 50.2358 28.1964C51.0183 28.457 51.8246 28.6397 52.643 28.7419L53.4402 28.8415H53.9159C54.61 28.8415 55.3015 28.9265 55.9748 29.0947L57.4957 29.8544L58.2561 31.1205L61.2977 32.1334L47.6104 41.2493L34.6834 49.8589L32.9091 49.9855L31.1348 50.1121L28.6002 50.6185L25.812 51.6314L25.5585 50.8717L33.923 42.5154L29.1071 44.0348L17.701 41.2493L16.1802 37.451H26.3189L13.8989 33.1462L11.6177 26.8157L22.2634 29.8544L6.29486 21.4981L2.99976 13.9014L23.2773 22.7642L10.6038 12.8885Z"
+                                    stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="instruction-decor instruction-decor__bottom">
+                            <svg width="65" height="54" viewBox="0 0 65 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.05"
+                                    d="M10.6038 12.8885L5.78792 2H6.04139L22.5169 14.4079L32.9091 22.0045L41.2736 28.0818L41.2736 35.4252L45.3291 31.1205L49.8916 32.6398L49.6381 31.3737L53.1867 31.6269L49.1312 30.3608L46.343 27.5754L46.8499 26.5625L48.1132 27.2636C48.7904 27.6395 49.501 27.9517 50.2358 28.1964C51.0183 28.457 51.8246 28.6397 52.643 28.7419L53.4402 28.8415H53.9159C54.61 28.8415 55.3015 28.9265 55.9748 29.0947L57.4957 29.8544L58.2561 31.1205L61.2977 32.1334L47.6104 41.2493L34.6834 49.8589L32.9091 49.9855L31.1348 50.1121L28.6002 50.6185L25.812 51.6314L25.5585 50.8717L33.923 42.5154L29.1071 44.0348L17.701 41.2493L16.1802 37.451H26.3189L13.8989 33.1462L11.6177 26.8157L22.2634 29.8544L6.29486 21.4981L2.99976 13.9014L23.2773 22.7642L10.6038 12.8885Z"
+                                    stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <div class="instruction-decor-line">
+                            <svg viewBox="0 0 678 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M133.855 9.14739C173.208 -1.63146 214.981 0.500567 253.032 15.23C336.959 47.7178 427.621 62.0909 517.497 57.4937C555.259 55.5621 593.104 64.7883 625.637 84.0495L674.611 113.044L667.882 114.722C667.346 114.856 667.02 115.398 667.154 115.934C667.287 116.47 667.83 116.796 668.366 116.663L677.099 114.485C677.635 114.352 677.961 113.809 677.827 113.273L675.65 104.54C675.516 104.004 674.973 103.678 674.438 103.812C673.902 103.946 673.576 104.488 673.709 105.024L675.219 111.08L626.656 82.3285C593.781 62.8651 555.546 53.5448 517.394 55.4963C427.797 60.0793 337.416 45.7502 253.754 13.3649C215.304 -1.5191 173.093 -3.67349 133.327 7.21844L0.735474 43.5354L1.26382 45.4644L133.855 9.14739Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                        <img class="instruction__image" src="images/home/instruction-img.png" alt="car-image">
+                        <div class="instruction__item instruction__item-step-1">
+                            <span class="instruction__item-decor-number">1</span>
+                            <span class="instruction__item-decor-text btn-grd-2">крок 1</span>
+                            <h4 class="instruction__item-title title-h4">
+                                <span>скачайте</span>
+                                <span class="instruction__item-title-accent">та встановіть</span>
+                                <span>лаунчер</span>
+                            </h4>
+                            <p class="instruction__item-description description">для телефону або пк</p>
+                            <div class="instruction__links">
+                                <a class="instruction__link-btn btn btn-grd-1 btn-accent" href="#" download="download">
+                                    <span class="btn-accent__content">
+                                        <span>MOBILE лаунчер</span>
+                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12.5333 7.07881L11.4666 5.79547L7.83325 8.82881V0.603806H6.16659V8.82881L2.53325 5.79547L1.46659 7.07881L6.99992 11.6871L12.5333 7.07881ZM0.333252 13.9371H13.6666V15.6038H0.333252V13.9371Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a class="instruction__link-btn btn instruction__link-btn-min" href="#" download="download">
+                                    <span class="btn-accent__content">
+                                        <span>для ос Android</span>
+                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1_154)">
+                                                <path
+                                                    d="M7.37202 10.6744C7.72893 10.6744 8.04017 10.3632 8.04017 10.0062V8.44583H8.48631C8.75402 8.44583 8.93244 8.26734 8.93244 7.99969V3.54291H3.58307V7.99973C3.58307 8.26741 3.76152 8.44586 4.0292 8.44586H4.47537V10.0063C4.47537 10.3632 4.78655 10.6744 5.14352 10.6744C5.5004 10.6744 5.8116 10.3632 5.8116 10.0063V8.44586H6.70391V10.0063C6.70387 10.3632 7.01512 10.6744 7.37202 10.6744Z"
+                                                    fill="#565573" />
+                                                <path
+                                                    d="M10.0468 7.99973C10.4037 7.99973 10.7148 7.68852 10.7148 7.33158V4.21077C10.7148 3.85575 10.4037 3.54291 10.0468 3.54291C9.68981 3.54291 9.3786 3.85575 9.3786 4.21077V7.33158C9.3786 7.68848 9.68977 7.99973 10.0468 7.99973Z"
+                                                    fill="#565573" />
+                                                <path
+                                                    d="M2.46874 7.99973C2.82568 7.99973 3.13689 7.68852 3.13689 7.33158V4.21077C3.13689 3.85575 2.82572 3.54291 2.46874 3.54291C2.11183 3.54291 1.80066 3.85575 1.80066 4.21077V7.33158C1.80066 7.68848 2.11183 7.99973 2.46874 7.99973Z"
+                                                    fill="#565573" />
+                                                <path
+                                                    d="M8.39705 0.0673209C8.30785 -0.0224403 8.17507 -0.0224403 8.08587 0.0673209L7.4875 0.663698L7.4599 0.691268C7.10509 0.513598 6.70729 0.42487 6.26429 0.424015C6.26212 0.424015 6.25998 0.423943 6.25781 0.423943H6.25774C6.25549 0.423943 6.25343 0.424015 6.25118 0.424015C5.80822 0.42487 5.41042 0.513598 5.05565 0.691268L5.02797 0.663698L4.42964 0.0673209C4.34038 -0.0224403 4.20766 -0.0224403 4.11847 0.0673209C4.0292 0.156583 4.0292 0.289052 4.11847 0.378244L4.69728 0.957167C4.51078 1.08169 4.34166 1.23407 4.19458 1.40836C3.84249 1.82571 3.6179 2.36888 3.58702 2.95738C3.58674 2.96351 3.58613 2.96956 3.58585 2.97569C3.58396 3.01576 3.58307 3.05605 3.58307 3.09648H8.93244C8.93244 3.05605 8.93148 3.01576 8.92966 2.97569C8.92938 2.96956 8.92877 2.96351 8.92842 2.95738C8.89761 2.36888 8.67295 1.82568 8.32086 1.4084C8.17385 1.23411 8.00466 1.08173 7.81816 0.957203L8.39705 0.378279C8.48631 0.289052 8.48631 0.156583 8.39705 0.0673209ZM5.14267 2.31751C4.95809 2.31751 4.80845 2.16787 4.80845 1.98329C4.80845 1.79871 4.95809 1.64908 5.14267 1.64908C5.32725 1.64908 5.47689 1.79871 5.47689 1.98329C5.47689 2.16787 5.32725 2.31751 5.14267 2.31751ZM7.37284 2.31751C7.18826 2.31751 7.03862 2.16787 7.03862 1.98329C7.03862 1.79871 7.18826 1.64908 7.37284 1.64908C7.55742 1.64908 7.70706 1.79871 7.70706 1.98329C7.70706 2.16787 7.55742 2.31751 7.37284 2.31751Z"
+                                                    fill="#565573" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1_154">
+                                                    <rect width="10.6744" height="10.6744" fill="white" transform="translate(0.920654)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <span>або</span>
+                                <a class="instruction__link" href="#" download="download">PC лаунчер</a>
+                            </div>
+                        </div>
+                        <div class="instruction__item instruction__item-step-2">
+                            <span class="instruction__item-decor-number">2</span>
+                            <span class="instruction__item-decor-text btn-grd-1">крок 2</span>
+                            <h4 class="instruction__item-title title-h4">
+                                <span>введіть НіК</span>
+                                <span class="instruction__item-title-accent">і підключайтесь</span>
+                                <span>до СЕРВЕРУ</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <img class="footer__logo" src="images/logo-footer.png" alt="logo">
+                    <div class="footer__links">
+                        <a class="footer__link" href="#" download="download">Користувацька угода</a>
+                        <a class="footer__link" href="#" download="download">політика конфіденційності</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright__text">copyright © SAMP UKRAINE. усі права захищені.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
